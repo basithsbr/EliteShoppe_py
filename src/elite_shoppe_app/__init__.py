@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/getProducts")
 def read_root():
-    return {"message": "Welcome to Elite Shoppe App API!"}
+    return {"message": "Welcome to Elite Shoppe App API main page!"}
