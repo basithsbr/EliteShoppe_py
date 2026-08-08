@@ -32,7 +32,7 @@ app = FastAPI(lifespan=lifespan)
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to Elite Shoppe App API!"}
+    return {"message": "Welcome to Elite Shoppe App API successfully!"}
 
 # Example Route: Test your connection by fetching a sample list
 @app.get("/products")
