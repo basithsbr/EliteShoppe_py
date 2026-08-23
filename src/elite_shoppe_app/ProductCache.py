@@ -31,7 +31,7 @@ class ProductCache:
             
             # Atomic swap of the old cache dictionary with the new one
             self._cache = new_cache
-            print(f"✅ Cache ready. {len(self._cache)} products loaded.")
+            print(f"Cache ready. {len(self._cache)} products loaded.")
 
     def get_product(self, product_id: str) -> dict:
         """Instantly fetches a single product from RAM (No DB call)."""
