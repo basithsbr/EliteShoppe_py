@@ -1,0 +1,785 @@
+[
+    {
+        "_id": "6a762ba92d996dcaab93c69e",
+        "item": "Cosmetics",
+        "category": "Cosmetics",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c69f",
+        "item": "Cosmetics2",
+        "category": "Cosmetics",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6a0",
+        "item": "Cosmetics3",
+        "category": "Cosmetics",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6a1",
+        "item": "Cosmetics4",
+        "category": "Cosmetics",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6a2",
+        "item": "Cosmetics5",
+        "category": "Cosmetics",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6a3",
+        "item": "Cosmetics6",
+        "category": "Cosmetics",
+        "price": 750,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6a4",
+        "item": "Cosmetics7",
+        "category": "Cosmetics",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6a5",
+        "item": "Cosmetics8",
+        "category": "Cosmetics",
+        "price": 750,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6a6",
+        "item": "Cosmetics9",
+        "category": "Cosmetics",
+        "price": 759,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6a7",
+        "item": "Cosmetics10",
+        "category": "Cosmetics",
+        "price": 1099,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6a8",
+        "item": "Cosmetics11",
+        "category": "Cosmetics",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6a9",
+        "item": "Cosmetics12",
+        "category": "Cosmetics",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6aa",
+        "item": "Cosmetics13",
+        "category": "Cosmetics",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6ab",
+        "item": "Cosmetics14",
+        "category": "Cosmetics",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6ac",
+        "item": "Cosmetics15",
+        "category": "Cosmetics",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6ad",
+        "item": "Cosmetics16",
+        "category": "Cosmetics",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6ae",
+        "item": "Cosmetics17",
+        "category": "Cosmetics",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6af",
+        "item": "Cosmetics18",
+        "category": "Cosmetics",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6b0",
+        "item": "Cosmetics19",
+        "category": "Cosmetics",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6b1",
+        "item": "Cosmetics20",
+        "category": "Cosmetics",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6b2",
+        "item": "Cosmetics21",
+        "category": "Cosmetics",
+        "price": 750,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762ba92d996dcaab93c6b3",
+        "item": "Cosmetics22",
+        "category": "Cosmetics",
+        "price": 1099,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6b4",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6b5",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6b6",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6b7",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6b8",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6b9",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 750,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6ba",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 759,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6bb",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 1099,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6bc",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6bd",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6be",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6bf",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6c0",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6c1",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6c2",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6c3",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6c4",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 750,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6c5",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 759,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6c6",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 1099,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6c7",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6c8",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6c9",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6ca",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6cb",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6cc",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6cd",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6ce",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6cf",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 750,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6d0",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 759,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6d1",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 1099,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6d2",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6d3",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6d4",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6d5",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6d6",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6d7",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6d8",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6d9",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6da",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 750,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6db",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 759,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6dc",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 1099,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6dd",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6de",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6df",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6e0",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6e1",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6e2",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6e3",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 50,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6e4",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6e5",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 750,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6e6",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 759,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6e7",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 1099,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6e8",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6e9",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 200,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a762baa2d996dcaab93c6ea",
+        "item": "Hand Bag",
+        "category": "Hand Bag",
+        "price": 100,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "quantity": 2,
+        "date": "2026-08-07T19:02:02.130000"
+    },
+    {
+        "_id": "6a8ad023f8c24a2cc6c1e9cc",
+        "item": "testAddProduct",
+        "category": "Cosmetics",
+        "price": 50.0,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a8ad0e267cb4d6ed3c55362",
+        "item": "testAddProduct",
+        "category": "Cosmetics",
+        "price": 50.0,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a8ad13f67cb4d6ed3c55363",
+        "item": "testAddProduct",
+        "category": "Cosmetics",
+        "price": 50.0,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a8ad18a67cb4d6ed3c55364",
+        "item": "testAddProduct1",
+        "category": "Cosmetics",
+        "price": 50.0,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a8ad1be7963c64a0336ab11",
+        "item": "testAddProduct1",
+        "category": "Cosmetics",
+        "price": 50.0,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a8ad1ed593c95e6411b0ccc",
+        "item": "testAddProduct1",
+        "category": "Cosmetics",
+        "price": 50.0,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a8ae69ff5fa3b9a1afbe41c",
+        "item": "Cosmetics6",
+        "category": "Cosmetics",
+        "price": 50.0,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    },
+    {
+        "_id": "6a8ae69ff5fa3b9a1afbe41b",
+        "item": "Cosmetics5",
+        "category": "Cosmetics",
+        "price": 50.0,
+        "brand": "tusker",
+        "model": "Elite Premium",
+        "date": "2026-08-07T19:02:01.799000"
+    }
+]
