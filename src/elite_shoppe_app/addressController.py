@@ -37,7 +37,7 @@ class AddressPayload(BaseModel):
     landline: str
     email: str
     
-@router.put("/addAddress")
+@router.post("/addAddress")
 async def add_address(
     address_data: AddressPayload,
     service: AddressService = Depends(get_address_service)
@@ -55,5 +55,7 @@ async def add_address(
 async def get_all_addresses(
     service: AddressService = Depends(get_address_service)
 ):
+    
+    
     addresses = await service.get_all_addresses()
     return addresses
