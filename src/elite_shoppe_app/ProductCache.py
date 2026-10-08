@@ -25,8 +25,8 @@ class ProductCache:
             new_cache = {}
 
             try:
-                # self.loadMongoData()
-                self.loadData()
+                self.loadMongoData()
+                # self.loadData()
                 print(f"Cache ready. {len(self._cache)} products loaded.")
 
             except PyMongoError as e:
