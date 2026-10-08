@@ -49,11 +49,8 @@ class AddressService:
 
             if result.inserted_id:
                 logger.info(f"Address inserted into MongoDB with ID: {result.inserted_id}")
-                
-                # 3. CRITICAL: Trigger the RAM cache reload so routes see it instantly
-                self.cache.reload_all_products()
                 return True
-                
+            
             return False
         except Exception as e:
             logger.error(f"Error inserting address into MongoDB: {str(e)}")
