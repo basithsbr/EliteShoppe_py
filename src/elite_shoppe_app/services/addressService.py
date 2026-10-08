@@ -57,8 +57,9 @@ class AddressService:
             return False    
         
     async def get_all_addresses(self):
-        """Retrieves all address documents from MongoDB."""
+        logger.info(f"Fetching all addresses from MongoDB")
         addresses = []
         async for doc in self.collection.find():
+            logger.info(f"Fetched address: {doc}")
             addresses.append(doc)
         return addresses                    
