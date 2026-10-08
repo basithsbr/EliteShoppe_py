@@ -16,9 +16,9 @@ router = APIRouter();
 
 logger = logging.getLogger(__name__)
 
-@router.get("/prod_init")
+@router.get("/address_init")
 def read_root():
-    return {"message": "Welcome to Elite Shoppe App API successfully!"}
+    return {"message": "Welcome to Elite Shoppe App Address API successfully!"}
 
 def get_address_service(request: Request) -> AddressService:
     return AddressService(
@@ -28,10 +28,10 @@ class AddressPayload(BaseModel):
     address1: str
     address2: str
     district: str
-    pincode: str
+    zip: str
     city: str
     state: str
-    landmark: str
+    landMark: str
     mobile1: str
     mobile2: str
     landline: str
@@ -50,3 +50,10 @@ async def add_address(
         raise HTTPException(status_code=404, detail="Address not found or no changes made.")
         
     return {"status": "success", "message": "Address updated in the database successfully!"}
+
+@router.get("/getAllAddress")
+async def get_all_addresses(
+    service: AddressService = Depends(get_address_service)
+):
+    addresses = await service.get_all_addresses()
+    return addresses

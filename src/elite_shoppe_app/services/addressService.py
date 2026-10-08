@@ -58,3 +58,10 @@ class AddressService:
         except Exception as e:
             logger.error(f"Error inserting address into MongoDB: {str(e)}")
             return False    
+        
+    async def get_all_addresses(self):
+        """Retrieves all address documents from MongoDB."""
+        addresses = []
+        async for doc in self.collection.find():
+            addresses.append(doc)
+        return addresses                    
