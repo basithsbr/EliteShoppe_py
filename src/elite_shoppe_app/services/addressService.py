@@ -1,3 +1,5 @@
+from itertools import product
+
 from bson import ObjectId
 from elite_shoppe_app.ProductCache import ProductCache
 from motor.motor_asyncio import AsyncIOMotorDatabase
@@ -59,7 +61,22 @@ class AddressService:
     async def get_all_addresses(self):
         logger.info(f"Fetching all addresses from MongoDB")
         addresses = []
-        async for doc in self.collection.find():
-            logger.info(f"Fetched address: {doc}")
+        cursor = self.collection.find({})        
+        raw_addresses = await cursor.to_list(length=100)
+
+        for doc in raw_addresses:
+            doc["_id"] = str(doc["_id"])  
             addresses.append(doc)
+        
         return addresses                    
+    
+    async def get_addresses_by_id(self, address_id: str):
+        logger.info(f"Fetching address with ID: {address_id} from MongoDB")
+        address = await self.collection.find_one({"_id": ObjectId(address_id)})
+
+        if address:
+            address["_id"] = str(address["_id"]) 
+            return address
+        else:
+            logger.warning(f"No address found with ID: {address_id}")
+            return None

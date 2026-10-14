@@ -1,0 +1,75 @@
+from contextlib import asynccontextmanager
+from itertools import product
+from elite_shoppe_app.ProductCache import ProductCache
+from fastapi import FastAPI
+from motor.motor_asyncio import AsyncIOMotorClient
+from functools import cache
+from datetime import datetime
+from fastapi import FastAPI, APIRouter, Request,Depends, HTTPException
+from elite_shoppe_app.services import userService
+from elite_shoppe_app.services.addressService import AddressService
+from elite_shoppe_app.services.userService import UserService
+import logging
+from pydantic import BaseModel
+
+router = APIRouter();
+
+logger = logging.getLogger(__name__)
+
+@router.get("/user_init")
+def read_root():
+    
+    return {"message": "Welcome to Elite Shoppe App User API successfully!"}
+    
+def get_user_service(request: Request) -> UserService:
+    return UserService(
+        database=request.app.database
+    )
+class UserPayload(BaseModel):
+    name: str
+    email: str    
+    sex: str
+    age: int
+    
+@router.post("/addUser")
+async def add_user(
+    user_data: UserPayload,
+    service: UserService = Depends(get_user_service)
+):
+    
+    user_dict = user_data.model_dump()
+    success = await service.addUser(user_dict)
+
+    if not success:
+        raise HTTPException(status_code=404, detail="User not found or no changes made.")
+        
+    return {"status": "success", "message": "User added to the database successfully!"}
+
+@router.get("/getAllUsers")
+async def get_all_users(
+    service: UserService = Depends(get_user_service)
+):
+    
+    
+    users = await service.get_all_users()
+    return users
+
+
+@router.get("/getUserById/{id}")
+async def get_user_by_id(
+    id: str,
+    service: UserService = Depends(get_user_service)
+):
+    
+    user = await service.get_users_by_id(id)
+    return user
+
+
+@router.get("/getUserByUserId/{id}")
+async def get_user_by_userId(
+    id: str,
+    service: UserService = Depends(get_user_service)
+):
+    
+    user = await service.get_users_by_id(id)
+    return user

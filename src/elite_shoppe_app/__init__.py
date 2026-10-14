@@ -2,6 +2,7 @@ from fastapi import FastAPI
 import logging
 from .productController import router as product_router
 from .addressController import router as address_router
+from .userController import router as user_router
 from contextlib import asynccontextmanager
 from itertools import product
 from elite_shoppe_app.ProductCache import ProductCache
@@ -95,7 +96,7 @@ app.add_middleware(
 
 app.include_router(product_router)
 app.include_router(address_router)
-
+app.include_router(user_router)  # Include the user router
 
 @app.get("/")
 def read_root():

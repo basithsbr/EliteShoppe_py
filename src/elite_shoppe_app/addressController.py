@@ -25,6 +25,7 @@ def get_address_service(request: Request) -> AddressService:
         database=request.app.database
     )
 class AddressPayload(BaseModel):
+    userId: str
     address1: str
     address2: str
     district: str
@@ -51,11 +52,21 @@ async def add_address(
         
     return {"status": "success", "message": "Address updated in the database successfully!"}
 
-@router.get("/getAllAddress")
+@router.get("/getAllAddr")
 async def get_all_addresses(
     service: AddressService = Depends(get_address_service)
 ):
     
     
     addresses = await service.get_all_addresses()
+    return addresses
+
+
+@router.get("/getAddrById/{id}")
+async def get_addresses_by_id(
+    id: str,
+    service: AddressService = Depends(get_address_service)
+):
+    
+    addresses = await service.get_addresses_by_id(id)
     return addresses
