@@ -80,3 +80,22 @@ class AddressService:
         else:
             logger.warning(f"No address found with ID: {address_id}")
             return None
+        
+    async def get_addresses_by_userId(self, user_id: str):
+        logger.info(f"Fetching address with ID: {user_id} from MongoDB")
+        address = await self.collection.find_one({"userId": user_id})
+
+        if address:
+            address["_id"] = str(address["_id"]) 
+            return address
+        else:
+            logger.warning(f"No address found with ID: {user_id}")
+            return None
+        
+    async def update_addresses_by_userId(self, addressReq: any):
+        logger.info(f"update_addresses_by_userId  with ID: {addressReq.userId} from MongoDB")
+        address_dict = addressReq.model_dump();
+        status = await self.collection.replace_one({"userId": addressReq.userId},address_dict,upsert=True)
+
+        logger.debug(status.modified_count);
+        return status.modified_count;

@@ -24,8 +24,14 @@ def get_address_service(request: Request) -> AddressService:
     return AddressService(
         database=request.app.database
     )
+    
+class AddressLookupRequest(BaseModel):
+    userId: str
+    
 class AddressPayload(BaseModel):
     userId: str
+    userName: str
+    userEmail: str
     address1: str
     address2: str
     district: str
@@ -37,6 +43,7 @@ class AddressPayload(BaseModel):
     mobile2: str
     landline: str
     email: str
+
     
 @router.post("/addAddress")
 async def add_address(
@@ -70,3 +77,21 @@ async def get_addresses_by_id(
     
     addresses = await service.get_addresses_by_id(id)
     return addresses
+
+@router.post("/getAddrByUserId")
+async def get_addresses_by_userId(
+    addressRequest: AddressLookupRequest,
+    service: AddressService = Depends(get_address_service)
+):
+    
+    addresses = await service.get_addresses_by_userId(addressRequest.userId)
+    return addresses
+
+@router.post("/updateAddrByUserId")
+async def update_addresses_by_userId(
+    addressRequest: AddressPayload,
+    service: AddressService = Depends(get_address_service)
+):
+    
+    modified_count = await service.update_addresses_by_userId(addressRequest)
+    return modified_count
