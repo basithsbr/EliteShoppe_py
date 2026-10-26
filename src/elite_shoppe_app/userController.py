@@ -26,10 +26,11 @@ def get_user_service(request: Request) -> UserService:
         database=request.app.database
     )
 class UserPayload(BaseModel):
-    name: str
-    email: str    
-    sex: str
-    age: int
+    userId: str | None = None
+    name: str | None = None
+    email: str | None = None
+    sex: str | None = None
+    age: int | None = None
     
 @router.post("/addUser")
 async def add_user(
