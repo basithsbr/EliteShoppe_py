@@ -27,8 +27,8 @@ def get_user_service(request: Request) -> UserService:
     )
 class UserPayload(BaseModel):
     userId: str | None = None
-    name: str | None = None
-    email: str | None = None
+    userName: str | None = None
+    userEmail: str | None = None
     sex: str | None = None
     age: int | None = None
     
