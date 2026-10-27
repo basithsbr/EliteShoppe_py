@@ -11,11 +11,12 @@ from elite_shoppe_app.services.addressService import AddressService
 from elite_shoppe_app.services.userService import UserService
 import logging
 from pydantic import BaseModel
+import nanoid
 
 router = APIRouter();
 
 logger = logging.getLogger(__name__)
-
+custom_alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 @router.get("/user_init")
 def read_root():
     
@@ -39,6 +40,9 @@ async def add_user(
 ):
     
     user_dict = user_data.model_dump()
+    
+    clean_id = nanoid.generate(custom_alphabet, size=10)
+    user_dict["_id"] = clean_id
     success = await service.addUser(user_dict)
 
     if not success:

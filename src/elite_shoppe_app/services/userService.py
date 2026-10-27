@@ -7,6 +7,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
 class UserService:
     def __init__(self, database: AsyncIOMotorDatabase):
         self.db = database
@@ -44,10 +45,10 @@ class UserService:
             logger.error(f"Error inserting users into MongoDB: {str(e)}")
             return False
 
-    async def addUser(self, userString: dict) -> bool:
+    async def addUser(self, userInputReq: dict) -> bool:
         """Inserts a single user document into MongoDB and triggers a RAM cache sync."""
-        try:
-            result = await self.collection.insert_one(userString)
+        try:            
+            result = await self.collection.insert_one(userInputReq)
 
             if result.inserted_id:
                 logger.info(f"User inserted into MongoDB with ID: {result.inserted_id}")
