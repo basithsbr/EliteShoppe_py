@@ -71,9 +71,9 @@ async def add_get_user(
 
     user = await service.get_user_by_userEmail(user_data.userEmail);
     
-    if(user):
-        user_data["status"] = "user_exist"
-        return user;
+    if user:
+        user["status"] = "user_exist"
+        return user
     
     return save_user(user_data,service)
 
