@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from motor.motor_asyncio import AsyncIOMotorClient
 from functools import cache
 from datetime import datetime
-from fastapi import FastAPI, APIRouter, Request,Depends, HTTPException
+from fastapi import FastAPI, APIRouter, Request, Depends, HTTPException
 from elite_shoppe_app.services import userService
 from elite_shoppe_app.services.addressService import AddressService
 from elite_shoppe_app.services.userService import UserService
@@ -13,71 +13,71 @@ import logging
 from pydantic import BaseModel
 import nanoid
 
-router = APIRouter();
+router = APIRouter()
 
 logger = logging.getLogger(__name__)
 custom_alphabet = "0123456789"
+
+
 @router.get("/user_init")
 def read_root():
-    
+
     return {"message": "Welcome to Elite Shoppe App User API successfully!"}
-    
+
+
 def get_user_service(request: Request) -> UserService:
-    return UserService(
-        database=request.app.database
-    )
+    return UserService(database=request.app.database)
+
+
 class UserPayload(BaseModel):
     userId: str | None = None
     userName: str | None = None
     userEmail: str | None = None
     sex: str | None = None
     age: int | None = None
-    
+
+
 @router.post("/addUser")
 async def add_user(
-    user_data: UserPayload,
-    service: UserService = Depends(get_user_service)
+    user_data: UserPayload, service: UserService = Depends(get_user_service)
 ):
-    
+
     user_dict = user_data.model_dump()
-    attempts = 0
-    while attempts < 3:
-        clean_id = nanoid.generate(custom_alphabet, size=15)
-        user_dict["_id"] = clean_id
-         try:
-            success = await service.addUser(user_dict)
-            return {"status": "success", "message": "User added to the database successfully!","id": clean_id}
+
+    clean_id = nanoid.generate(custom_alphabet, size=15)
+    user_dict["_id"] = clean_id
+
+    success = await service.addUser(user_dict)
+    return {
+        "status": "success",
+        "message": "User added to the database successfully!",
+        "userId": clean_id,
+    }
 
     if not success:
-        raise HTTPException(status_code=500, detail="User not found or no changes made.")
-        
+        raise HTTPException(
+            status_code=500, detail="User not found or no changes made."
+        )
+
     return {"status": "success", "message": "User added to the database successfully!"}
 
+
 @router.get("/getAllUsers")
-async def get_all_users(
-    service: UserService = Depends(get_user_service)
-):
-    
-    
+async def get_all_users(service: UserService = Depends(get_user_service)):
+
     users = await service.get_all_users()
     return users
 
 
 @router.get("/getUserById/{id}")
-async def get_user_by_id(
-    id: str,
-    service: UserService = Depends(get_user_service)
-):
-    
+async def get_user_by_id(id: str, service: UserService = Depends(get_user_service)):
+
     user = await service.get_users_by_id(id)
     return user
 
 
 @router.get("/getUserByUserId/{id}")
-async def get_user_by_userId(
-    id: str,
-    service: UserService = Depends(get_user_service)
-):
-    
+async def get_user_by_userId(id: str, service: UserService = Depends(get_user_service)):
+
     user = await service.get_users_by_id(id)
     return user
