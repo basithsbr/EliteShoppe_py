@@ -83,6 +83,7 @@ class UserService:
             return None
         
     async def get_users_by_userId(self, user_id: str):
+            
             logger.info(f"Fetching user with ID: {user_id} from MongoDB")
             user = await self.collection.find_one({"id": ObjectId(user_id)})
     
@@ -91,4 +92,15 @@ class UserService:
                 return user
             else:
                 logger.warning(f"No user found with ID: {user_id}")
+                return None
+            
+    async def get_user_by_userEmail(self, user_email: str):                
+            logger.info(f"Fetching user with user_email: {user_email} from MongoDB")
+            user = await self.collection.find_one({"userEmail": user_email})
+    
+            if user:
+                user["_id"] = str(user["_id"]) 
+                return user
+            else:
+                logger.warning(f"No user found with ID: {user_email}")
                 return None
