@@ -48,18 +48,17 @@ async def add_user(
     user_dict["_id"] = clean_id
 
     success = await service.addUser(user_dict)
-    return {
-        "status": "success",
-        "message": "User added to the database successfully!",
-        "userId": clean_id,
-    }
-
+    
     if not success:
         raise HTTPException(
             status_code=500, detail="User not found or no changes made."
         )
 
-    return {"status": "success", "message": "User added to the database successfully!"}
+    return {
+            "status": "success",
+            "message": "User added to the database successfully!",
+            "userId": clean_id,
+        }
 
 
 @router.get("/getAllUsers")
