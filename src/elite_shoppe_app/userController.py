@@ -16,7 +16,7 @@ import nanoid
 router = APIRouter();
 
 logger = logging.getLogger(__name__)
-custom_alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+custom_alphabet = "0123456789"
 @router.get("/user_init")
 def read_root():
     
@@ -40,13 +40,16 @@ async def add_user(
 ):
     
     user_dict = user_data.model_dump()
-    
-    clean_id = nanoid.generate(custom_alphabet, size=10)
-    user_dict["_id"] = clean_id
-    success = await service.addUser(user_dict)
+    attempts = 0
+    while attempts < 3:
+        clean_id = nanoid.generate(custom_alphabet, size=15)
+        user_dict["_id"] = clean_id
+         try:
+            success = await service.addUser(user_dict)
+            return {"status": "success", "message": "User added to the database successfully!","id": clean_id}
 
     if not success:
-        raise HTTPException(status_code=404, detail="User not found or no changes made.")
+        raise HTTPException(status_code=500, detail="User not found or no changes made.")
         
     return {"status": "success", "message": "User added to the database successfully!"}
 
