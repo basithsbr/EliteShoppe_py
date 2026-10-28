@@ -41,9 +41,12 @@ class UserPayload(BaseModel):
 async def add_user(
     user_data: UserPayload, service: UserService = Depends(get_user_service)
 ):
-
+    return save_user(user_data,service)
+    
+    
+async def save_user(user_data: UserPayload, service: UserService) -> str:
     user_dict = user_data.model_dump()
-
+    
     clean_id = nanoid.generate(custom_alphabet, size=15)
     user_dict["_id"] = clean_id
 
@@ -55,11 +58,24 @@ async def add_user(
         )
 
     return {
-            "status": "success",
-            "message": "User added to the database successfully!",
+            "status": "save_success",            
             "userId": clean_id,
         }
+    
+@router.post("/add_get_user")
+async def add_get_user(
+    user_data: UserPayload, service: UserService = Depends(get_user_service)
+):
 
+    user_dict = user_data.model_dump()
+
+    user = await service.get_user_by_userEmail(user_data.userEmail);
+    
+    if(user):
+        user_data["status"] = "user_exist"
+        return user;
+    
+    return save_user(user_data,service)
 
 @router.get("/getAllUsers")
 async def get_all_users(service: UserService = Depends(get_user_service)):
