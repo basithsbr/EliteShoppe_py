@@ -58,14 +58,12 @@ async def add_order(
     return {"status": "success", "message": "Order updated in the database successfully!"}
 
 
-@router.post("/getAllOrders")
-async def get_all_orders(
-    order_data: OrderPayload,
+@router.get("/getAllOrders")
+async def get_all_orders(    
     service: OrderService = Depends(get_order_service)
 ):
     
-    order_dict = order_data.model_dump()
-    success = await service.addOrder(order_dict)
+    success = await service.get_all_orders()
 
     if not success:
         raise HTTPException(status_code=404, detail="Order not found or no changes made.")
