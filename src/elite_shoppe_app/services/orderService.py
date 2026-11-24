@@ -25,6 +25,19 @@ class OrderService:
         except Exception as e:
             logger.error(f"Error inserting order into MongoDB: {str(e)}")
             return False    
+    async def saveOrders(self, orderString: dict) -> bool:
+            """Inserts a single order document into MongoDB and triggers a RAM cache sync."""
+            try:
+                result = await self.collection.insert_many(orderString)
+    
+                if result.inserted_ids:
+                    logger.info(f"Orders inserted into MongoDB with IDs: {result.inserted_ids}")
+                    return True
+                
+                return False
+            except Exception as e:
+                logger.error(f"Error inserting order into MongoDB: {str(e)}")
+                return False    
         
     async def get_all_orders(self):
         logger.info(f"Fetching all orders from MongoDB")

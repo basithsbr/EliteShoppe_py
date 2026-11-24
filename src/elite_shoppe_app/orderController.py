@@ -43,14 +43,14 @@ class OrderPayload(BaseModel):
 
     
 @router.post("/saveOrder")
-async def add_order(
-    order_data: OrderPayload,
+async def save_order(
+    order_data: List[OrderPayload],
     service: OrderService = Depends(get_order_service)
 ):
     
-    order_dict = order_data.model_dump()
+    order_dict = [order.model_dump() for order in order_data]
     print(f"Order Data Received: {order_dict}");
-    success = await service.addOrder(order_dict)
+    success = await service.saveOrders(order_dict)
 
     if not success:
         raise HTTPException(status_code=404, detail="Order not found or no changes made.")
