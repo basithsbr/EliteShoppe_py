@@ -27,8 +27,7 @@ def get_order_service(request: Request) -> OrderService:
     
     
 class OrderPayload(BaseModel):
-    userId: str
-    name: str
+    userId: str | None = None    
     category: str
     model: str
     _id: str
@@ -50,6 +49,7 @@ async def add_order(
 ):
     
     order_dict = order_data.model_dump()
+    print(f"Order Data Received: {order_dict}");
     success = await service.addOrder(order_dict)
 
     if not success:
