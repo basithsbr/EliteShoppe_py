@@ -49,6 +49,7 @@ async def save_user(user_data: UserPayload, service: UserService) -> str:
     
     clean_id = nanoid.generate(custom_alphabet, size=15)
     user_dict["_id"] = clean_id
+    user_dict["userId"] = clean_id
 
     success = await service.addUser(user_dict)
     
